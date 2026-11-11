@@ -21,6 +21,7 @@ from .resnet_ibn_a import *
 from .resnet_ibn_b import *
 from .shufflenetv2 import *
 from .inceptionresnetv2 import *
+from .msfanet import msfanet_123, msfanet_222
 
 __model_factory = {
     # image classification models
@@ -32,6 +33,8 @@ __model_factory = {
     'resnext50_32x4d': resnext50_32x4d,
     'resnext101_32x8d': resnext101_32x8d,
     'resnet50_fc512': resnet50_fc512,
+    'msfanet_123': msfanet_123,
+    'msfanet_222': msfanet_222,
     'se_resnet50': se_resnet50,
     'se_resnet50_fc512': se_resnet50_fc512,
     'se_resnet101': se_resnet101,
